@@ -25,5 +25,5 @@ pip install -r requirements-rasp.txt
 ```
 Observação: A instalação do tflite-runtime na Pi Zero 2W pode falhar a depender da versão do numpy. Recomenda-se baixar exatamente as versões usadas no projeto para não haver erros. Além disso, existem pacotes externos que precisam ser baixados caso ainda não tenham sido, esses são:
 
-* # To do
+* To do
 
