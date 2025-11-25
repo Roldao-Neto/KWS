@@ -1,4 +1,4 @@
-# KWS (Keyword Spotting) com MFCC na Raspberry Pi Zero 2W
+# KWS (Keyword Spotting) na Raspberry Pi Zero 2W
 
 Este projeto implementa um sistema de Keyword Spotting (KWS) otimizado para a Raspberry Pi Zero 2W. Foram treinados diferentes tipos de modelos para classificação de áudio com o Google Speech Dataset.
 
