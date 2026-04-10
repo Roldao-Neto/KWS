@@ -1,8 +1,8 @@
-# KWS (Keyword Spotting) in Raspberry Pi Zero 2W
+# KWS (Keyword Spotting)
 
-This project implements Keyword Spotting (KWS) optimized to run on a Raspberry Pi Zero 2W. It contains different models trained with the Google Speech Dataset.
+This project implements Keyword Spotting (KWS) optimized for a Raspberry Pi Zero 2W. It contains different models trained with the Google Speech Dataset.
 
-This repo is organized into folders, each of which contains: the development Jupyter notebook, the inference script, the trained models, and the requirements.txt file for the step/model described by the folder's name.
+This repo is organized into folders, each containing the development Jupyter notebook, the inference script, the trained models, and the requirements.txt file for the step/model described by the folder's name.
 
 ## Hardware Requirements (Optional):
 
