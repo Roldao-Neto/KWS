@@ -1,32 +1,38 @@
-# KWS (Keyword Spotting) na Raspberry Pi Zero 2W
+# KWS (Keyword Spotting) in Raspberry Pi Zero 2W
 
-Este projeto implementa um sistema de Keyword Spotting (KWS) otimizado para a Raspberry Pi Zero 2W. Foram treinados diferentes tipos de modelos para classificação de áudio com o Google Speech Dataset.
+This project implements Keyword Spotting (KWS) optimized to run on a Raspberry Pi Zero 2W. It contains different models trained with the Google Speech Dataset.
 
-Esses repositório está separado em pastas que contém diferentes etapas e modelos de todo o projeto. O nome das pastas indica qual etapa foi feita ou qual tipo de modelo foi treinado. As pastas de modelo listadas abaixo contém cada uma os arquivos dos modelos treinados, um jupyter notebook com o passo a passo do treinamento, os arquivos com os requirements das bibliotecas do Python para aquela aplicação e o script para inferência.
+This repo is organized into folders, each of which contains: the development Jupyter notebook, the inference script, the trained models, and the requirements.txt file for the step/model described by the folder's name.
 
-## Requisitos de Hardware
+## Hardware Requirements (Optional):
 
 * Raspberry Pi Zero 2W
-* Cartão Micro SD
-* Microfone (USB ou I2S compatível com a Pi)
-* (Opcional) LED ou outro atuador para testes de GPIO
+* MicroSD Card
+* Microphone for audio capture
+* LEDs for visual inference
 
-## Requisitos de Software
+## Software Requirements
 
 * Python 3.11
 * Jupyter Notebook / Jupyter Lab
 * Raspberry Pi OS
-* Outros requisitos podem ser baixados usando os comandos abaixo nos respectivos venvs:
+* Other requirements ought to be downloaded for their respective venvs:
 
 ```bash
-# No PC para realizar o treinamento:
+# For Model Training:
 pip install -r requirements-pc.txt
 
-# Na placa de desenvolvimento para realizar a inferência:
+# For inference:
 pip install -r requirements-rasp.txt
 ```
 
-Observação: A instalação do tflite-runtime na Pi Zero 2W pode falhar a depender da versão do numpy. Recomenda-se baixar exatamente as versões usadas no projeto para não haver erros. Além disso, existem pacotes externos que precisam ser baixados caso ainda não tenham sido, esses são:
+**PS-1:** The following packages should be downloaded to run the inference:
 
 * portaudio19-dev
 * python3-dev
+
+**PS-2:** These models were optimized with the `tf-lite-runtime` python library, which is now deprecated. Its successor is LiteRT and supports the API calls of the previous library. Therefore, you should consider upgrading your Python version and the optimization Framework
+
+## License
+
+MIT
