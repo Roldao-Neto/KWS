@@ -1,2 +1,4 @@
 # Raw dataset (downloaded once, see PLAN.md)
 data/
+__pycache__
+.DS_Store
